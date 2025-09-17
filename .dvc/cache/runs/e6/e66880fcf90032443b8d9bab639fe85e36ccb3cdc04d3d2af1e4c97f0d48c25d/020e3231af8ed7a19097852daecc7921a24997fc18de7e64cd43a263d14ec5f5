@@ -1,0 +1,11 @@
+cmd: python src/evaluate.py
+deps:
+- path: models/model.pkl
+  hash: md5
+  md5: 84e02b7bb7682df6fcd14bf31dd57c08
+  size: 863
+outs:
+- path: metrics.json
+  hash: md5
+  md5: 3adc3022e0476203b9a68c3cf346b2ad
+  size: 23

@@ -1,0 +1,12 @@
+stages:
+  train:
+    cmd: python src/train.py
+    outs:
+      - models/model.pkl
+
+  evaluate:
+    cmd: python src/evaluate.py
+    deps:
+      - models/model.pkl
+    metrics:
+      - metrics.json
